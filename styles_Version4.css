@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  background: #181A20;
+  color: #E0E0E0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #22242C;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  padding: 32px 24px;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.3em;
+  color: #FF9800;
+  /* orange accent on title */
+  text-shadow: 0 2px 8px rgba(255,152,0,0.13);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #23262F;
+  border-radius: 12px;
+  padding: 18px 24px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 16px rgba(255,152,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(255,152,0,0.16);
+  background: #23262F;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.card.discord {
+  border-left: 5px solid #FF9800;
+}
+
+.card.gunlol {
+  border-left: 5px solid #FFA726;
+}
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+  color: #888;
+}
